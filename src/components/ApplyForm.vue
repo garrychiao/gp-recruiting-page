@@ -5,7 +5,7 @@
         <h1>申請成為全職籌款幹事及街頭教育專員</h1>
       </el-col>
       <el-col>
-        <img src="../assets/img/7R307315.jpg" width="100%" style="max-width: 600px;" alt />
+        <img src="../assets/img/slide4.jpg" width="100%" alt />
         <el-divider></el-divider>
       </el-col>
     </el-row>
@@ -27,13 +27,22 @@
               </el-radio-group>
             </el-form-item>
             <el-form-item label="中文全名" prop="name">
-              <el-input v-model="applyForm.name" placeholder="中文全名"></el-input>
+              <el-input
+                v-model="applyForm.name"
+                placeholder="中文全名"
+              ></el-input>
             </el-form-item>
             <el-form-item label="聯絡電話" prop="phone">
-              <el-input v-model="applyForm.phone" placeholder="聯絡電話"></el-input>
+              <el-input
+                v-model="applyForm.phone"
+                placeholder="聯絡電話"
+              ></el-input>
             </el-form-item>
             <el-form-item label="電郵地址" prop="email">
-              <el-input v-model="applyForm.email" placeholder="電郵地址"></el-input>
+              <el-input
+                v-model="applyForm.email"
+                placeholder="電郵地址"
+              ></el-input>
             </el-form-item>
             <el-form-item label="出生年份" prop="birthYear">
               <el-date-picker
@@ -49,7 +58,8 @@
                 type="success"
                 :loading="submitLoading"
                 @click="submitForm('applyForm')"
-              >提交申請</el-button>
+                >提交申請</el-button
+              >
             </el-form-item>
           </el-form>
         </el-card>
