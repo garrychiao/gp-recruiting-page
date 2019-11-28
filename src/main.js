@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router/index'
 //
 import VueRouter from 'vue-router'
+/*
 import VueGtm from "vue-gtm";
 Vue.use(VueGtm, {
   id: "GTM-M6LZL75", // Your GTM single container ID or array of container ids ['GTM-xxxxxxx', 'GTM-yyyyyyy']
@@ -12,6 +13,7 @@ Vue.use(VueGtm, {
   vueRouter: router, // Pass the router instance to automatically sync with router (optional)
   ignoredViews: ["MainContent"] // If router, you can exclude some routes name (case insensitive) (optional)
 });
+*/
 //
 import ElementUI from 'element-ui'
 import NProgress from 'nprogress'
