@@ -12,6 +12,8 @@ const router = new Router({
             component: MainContent,
         }
     ],
+    mode: 'history',
+    linkActiveClass: 'link-active',
 });
 
 export default router
