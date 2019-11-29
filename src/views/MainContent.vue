@@ -72,7 +72,6 @@ export default {
       // console.log(section);
       if (section) {
         this.section = section.component;
-        dataLayer.push({ event: "pageview" });
       }
     }
   },
