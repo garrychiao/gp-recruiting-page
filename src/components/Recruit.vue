@@ -59,7 +59,7 @@ export default {
         },
         {
           cell1: "有薪假期",
-          cell2: "15天有薪年假"
+          cell2: "享有最多20天有薪年假"
         },
         {
           cell1: "學歷",

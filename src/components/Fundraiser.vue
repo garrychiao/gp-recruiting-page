@@ -64,7 +64,7 @@
                 <div style="--aspect-ratio: 16/9;">
                   <iframe
                     class="video"
-                    src="https://www.youtube.com/embed/sffAL_fzUnU?enablejsapi=1"
+                    src="https://www.youtube.com/embed/n4GhL4cy5m0?enablejsapi=1"
                     width="100%"
                     scrolling="no"
                     frameborder="0"
@@ -72,6 +72,20 @@
                 </div>
               </el-tab-pane>
               <el-tab-pane>
+                <span slot="label">
+                  <i class="el-icon-caret-right"></i> 影片 2
+                </span>
+                <div style="--aspect-ratio: 16/9;">
+                  <iframe
+                    class="video"
+                    src="https://www.youtube.com/embed/sffAL_fzUnU?enablejsapi=1"
+                    width="100%"
+                    scrolling="no"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+              </el-tab-pane>
+              <!-- <el-tab-pane>
                 <span slot="label">
                   <i class="el-icon-caret-right"></i> 影片 2
                 </span>
@@ -98,7 +112,7 @@
                     frameborder="0"
                   ></iframe>
                 </div>
-              </el-tab-pane>
+              </el-tab-pane> -->
             </el-tabs>
           </div>
         </el-col>
@@ -115,7 +129,7 @@ export default {
       collapseData: [
         {
           name: "Wayne Ko",
-          position: "籌款主管",
+          position: "資深籌款主管",
           year: "4年6個月",
           img:
             "https://secured.greenpeace.org/hk/Global/hk/artworks/gp/ddc-recruitment/2018/wayne_intro.jpg",

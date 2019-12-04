@@ -65,6 +65,9 @@ export default {
         },
         {
           imgUrl: require("@/assets/img/slide5.jpg")
+        },
+        {
+          imgUrl: require("@/assets/img/slide6.jpg")
         }
       ]
     };
