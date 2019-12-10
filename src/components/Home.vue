@@ -36,17 +36,20 @@
         </p>
       </el-col>
     </el-row>
+    <center-btn></center-btn>
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import CenterBtn from './CenterBtn';
 
 export default {
   name: "Home",
   components: {
     Carousel,
-    Slide
+    Slide,
+    CenterBtn,
   },
   data() {
     return {

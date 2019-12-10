@@ -9,11 +9,17 @@
 				<img src="../assets/img/2019_09_HK DD handbook_graphic-01.png" width="100%" alt />
 			</el-col>
 		</el-row>
+		<center-btn></center-btn>
 	</div>
 </template>
 
 <script>
+import CenterBtn from './CenterBtn';
+
 export default {
-	name: "personnel"
+	name: "personnel",
+	components: {
+		CenterBtn,
+	},
 };
 </script>

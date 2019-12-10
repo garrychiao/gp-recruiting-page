@@ -28,12 +28,18 @@
         </el-card>
       </el-col>
     </el-row>
+    <center-btn></center-btn>
   </div>
 </template>
 
 <script>
+import CenterBtn from './CenterBtn';
+
 export default {
   name: "recruit",
+  components: {
+		CenterBtn,
+	},
   data() {
     return {
       tableData: [

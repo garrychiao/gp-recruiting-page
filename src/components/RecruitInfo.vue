@@ -17,12 +17,18 @@
     </p>
     <el-divider class="hidden-xs-only"></el-divider>
     <img src="../assets/img/slide2.jpg" width="100%" alt />
+    <center-btn></center-btn>
   </div>
 </template>
 
 <script>
+import CenterBtn from './CenterBtn';
+
 export default {
   name: "RecruitInfo",
+  components: {
+		CenterBtn,
+	},
   data() {
     return {
       activeName: "first"
