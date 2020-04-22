@@ -3,10 +3,8 @@
     <h1>聯絡方式</h1>
     <p>
       有意應徵者，歡迎將履歷電郵至
-      <a href="mailto:andy.li@greenpeace.org" taget="_blank"
-        >andy.li@greenpeace.org</a
-      >
-      或 whatsapp 60763243 李先生了解詳情。
+      <a href="mailto:andy.li@greenpeace.org" taget="_blank">andy.li@greenpeace.org</a>
+      或 與招聘主任 (Whatsapp 5913 0059)了解詳情。
       <br />(應徵者提供之全部資料絕對保密及只作招聘之用)
     </p>
     <p>
