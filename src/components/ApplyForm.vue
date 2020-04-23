@@ -136,10 +136,20 @@ export default {
               );
               this.submitLoading = false;
             } else {
+              Swal.fire(
+                "表格傳送失敗",
+                "歡迎直接將履歷電郵至 andy.li@greenpeace.org 或 與招聘主任 (Whatsapp 5913 0059)了解詳情。",
+                "warning"
+              );
               this.submitLoading = false;
               console.log(res);
             }
           } catch (err) {
+            Swal.fire(
+              "表格傳送失敗",
+              "歡迎直接將履歷電郵至 andy.li@greenpeace.org 或 與招聘主任 (Whatsapp 5913 0059)了解詳情。",
+              "warning"
+            );
             this.submitLoading = false;
             console.log(err);
           }
