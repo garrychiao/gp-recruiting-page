@@ -31,7 +31,7 @@
     </div>
     <div class="footer-lower">
       <div class="footer__credit">
-        <p>© GREENPEACE 2019</p>
+        <p>© GREENPEACE {{new Date().getFullYear()}}</p>
       </div>
     </div>
   </div>
