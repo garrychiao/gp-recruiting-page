@@ -3,7 +3,9 @@
     <h1>聯絡方式</h1>
     <p>
       有意應徵者，歡迎將履歷電郵至
-      <a href="mailto:andy.li@greenpeace.org" taget="_blank">andy.li@greenpeace.org</a>
+      <a href="mailto:andy.li@greenpeace.org" taget="_blank"
+        >andy.li@greenpeace.org</a
+      >
       或 與招聘主任 (Whatsapp 5913 0059)了解詳情。
       <br />(應徵者提供之全部資料絕對保密及只作招聘之用)
     </p>
@@ -23,19 +25,19 @@
 import CenterBtn from './CenterBtn';
 
 export default {
-  name: "RecruitInfo",
+  name: 'RecruitInfo',
   components: {
-		CenterBtn,
-	},
+    CenterBtn,
+  },
   data() {
     return {
-      activeName: "first"
+      activeName: 'first',
     };
   },
   methods: {
     resizeIframe(obj) {
-      obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
-    }
-  }
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    },
+  },
 };
 </script>
