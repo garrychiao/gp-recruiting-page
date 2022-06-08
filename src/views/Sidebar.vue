@@ -19,16 +19,16 @@
 
 <script>
 export default {
-  name: "Sidebar",
+  name: 'Sidebar',
   props: {
     routers: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
-      active: "1"
+      active: '1',
     };
   },
   created() {
@@ -48,13 +48,13 @@ export default {
         }
       }
       // console.log(this.active)
-    }
+    },
   },
   watch: {
-    "$route.params.section": function() {
+    '$route.params.section': function() {
       this.bindSection();
-    }
-  }
+    },
+  },
 };
 </script>
 

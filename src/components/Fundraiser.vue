@@ -10,21 +10,21 @@
           <el-col>
             <el-card shadow="hover">
               <el-row>
-                <el-col :sm="{span: 16, offset: 0}" class="hidden-sm-and-up">
+                <el-col :sm="{ span: 16, offset: 0 }" class="hidden-sm-and-up">
                   <img :src="item.img" width="100%" alt />
                 </el-col>
-                <el-col :sm="{span: 15, offset: 0}">
-                  <h2>{{item.name}}</h2>
+                <el-col :sm="{ span: 15, offset: 0 }">
+                  <h2>{{ item.name }}</h2>
                   <p>
-                    職位：{{item.position}}
+                    職位：{{ item.position }}
                     <br />
-                    <small>任職年期：{{item.year}}</small>
+                    <small>任職年期：{{ item.year }}</small>
                   </p>
-                  <p style="margin-top: 20px;">{{item.intro}}</p>
+                  <p style="margin-top: 20px;">{{ item.intro }}</p>
                 </el-col>
                 <el-col
-                  :xs="{span: 22, offset: 1}"
-                  :sm="{span: 8, offset: 1}"
+                  :xs="{ span: 22, offset: 1 }"
+                  :sm="{ span: 8, offset: 1 }"
                   class="hidden-xs-only"
                 >
                   <img :src="item.img" width="100%" alt />
@@ -37,8 +37,8 @@
                     <i class="header-icon el-icon-info"></i>
                   </template>
                   <div v-for="(title, index) in item.contentTitle" :key="title">
-                    <h3>{{title}}</h3>
-                    <p>{{item.contentText[index]}}</p>
+                    <h3>{{ title }}</h3>
+                    <p>{{ item.contentText[index] }}</p>
                   </div>
                 </el-collapse-item>
               </el-collapse>
@@ -53,7 +53,9 @@
           <el-divider></el-divider>
           <div class="graph-content">
             <p>
-              <strong>了解我們更多的工作使命，可觀看以下短片或瀏覧我們的網址</strong>
+              <strong
+                >了解我們更多的工作使命，可觀看以下短片或瀏覧我們的網址</strong
+              >
             </p>
             <br />
             <el-tabs type="border-card" :stretch="true">
@@ -126,55 +128,53 @@
 import CenterBtn from './CenterBtn';
 
 export default {
-  name: "Mission",
+  name: 'Mission',
   components: {
-		CenterBtn,
-	},
+    CenterBtn,
+  },
   data() {
     return {
       collapseData: [
         {
-          name: "Wayne Ko",
-          position: "資深籌款主管",
-          year: "4年6個月",
-          img:
-            "https://secured.greenpeace.org/hk/Global/hk/artworks/gp/ddc-recruitment/2018/wayne_intro.jpg",
+          name: 'Wayne Ko',
+          position: '資深籌款主管',
+          year: '4年6個月',
+          img: '',
           intro:
-            "原來她家住劏房仍堅持捐款，更表示「支持一世」，那個感動時刻至今記憶猶新。",
+            '原來她家住劏房仍堅持捐款，更表示「支持一世」，那個感動時刻至今記憶猶新。',
           contentTitle: [
-            "你現在的職位是？主要職責是甚麼？",
-            "我沒有籌款經驗，這份工作有提供相關培訓嗎？",
-            "工作的感動",
-            "給新同事的話？"
+            '你現在的職位是？主要職責是甚麼？',
+            '我沒有籌款經驗，這份工作有提供相關培訓嗎？',
+            '工作的感動',
+            '給新同事的話？',
           ],
           contentText: [
-            "我身為籌款主管，除了負責管理三隊街頭籌款團隊的日常事務，亦會為每位同事訂立個人目標，隨時聆聽他們的心聲，凝聚積極樂觀的團隊氣氛，跨越連場環保挑戰。",
-            "綠色和平特設兩天入職培訓，主要教導如何接觸市民，更有效傳遞環保訊息，亦有各種team building活動，加強團隊合作、提升領導才能。我們亦會一同親親大自然，與環境重新連繫。",
-            "記得某次工作，一位婆婆駐足凝望被棕櫚油企業破壞印尼雨林棲息地的紅毛猩猩照片，並問我們：「隻猩猩係咪就嚟死啦？」眼見婆婆腳步蹣跚、推着滿載紙皮的手推車，我們也於心不忍，但她決意捐助，並填寫「Flat R」的地址……原來她家住劏房仍堅持捐款，更表示「支持一世」，那個感動時刻至今記憶猶新。",
-            "每次聽見市民分享日常如何實踐環保，或者了解過後願意成為綠色和平會員，均讓我感到環保路上充滿希望，因無數有心人仍熱愛這片土地。我們需要更多志同道合的夥伴加入，特別是對環保有熱誠的您！"
-          ]
+            '我身為籌款主管，除了負責管理三隊街頭籌款團隊的日常事務，亦會為每位同事訂立個人目標，隨時聆聽他們的心聲，凝聚積極樂觀的團隊氣氛，跨越連場環保挑戰。',
+            '綠色和平特設兩天入職培訓，主要教導如何接觸市民，更有效傳遞環保訊息，亦有各種team building活動，加強團隊合作、提升領導才能。我們亦會一同親親大自然，與環境重新連繫。',
+            '記得某次工作，一位婆婆駐足凝望被棕櫚油企業破壞印尼雨林棲息地的紅毛猩猩照片，並問我們：「隻猩猩係咪就嚟死啦？」眼見婆婆腳步蹣跚、推着滿載紙皮的手推車，我們也於心不忍，但她決意捐助，並填寫「Flat R」的地址……原來她家住劏房仍堅持捐款，更表示「支持一世」，那個感動時刻至今記憶猶新。',
+            '每次聽見市民分享日常如何實踐環保，或者了解過後願意成為綠色和平會員，均讓我感到環保路上充滿希望，因無數有心人仍熱愛這片土地。我們需要更多志同道合的夥伴加入，特別是對環保有熱誠的您！',
+          ],
         },
         {
-          name: "Sky Ho",
-          position: "籌款隊長",
-          year: "2年4個月",
-          img:
-            "https://secured.greenpeace.org/hk/Global/hk/artworks/gp/ddc-recruitment/2018/sky_intro.jpg",
+          name: 'Sky Ho',
+          position: '籌款隊長',
+          year: '2年4個月',
+          img: '',
           intro:
-            "我們在香港紮根20多年來，從不接受政商界捐款，秉持獨立、公正守護環境",
+            '我們在香港紮根20多年來，從不接受政商界捐款，秉持獨立、公正守護環境',
           contentTitle: [
-            "街頭工作抱負？",
-            "對籌款工作的誤解",
-            "綠色和平保護環境，得個「講」字？",
-            "為自己的工作感到驕傲？"
+            '街頭工作抱負？',
+            '對籌款工作的誤解',
+            '綠色和平保護環境，得個「講」字？',
+            '為自己的工作感到驕傲？',
           ],
           contentText: [
-            "我希望以真誠打動市民，邀請他們與綠色和平一同堅守環境保護最前線；自己也希望以身作則，讓每位隊員承傳這顆人與人之間坦誠相對的心。",
-            "最初加入時，以為籌款如同「呃錢」，之後才明白綠色和平是全球首創直接對話行動(Direct Dialogue Campaign)理念、1999年更是香港首間成立街頭籌款團隊的國際非政府組織。我們在香紮根20多年來，從不接受政商界捐款，秉持獨立、公正守護環境，更需要集結群眾力量作最強後盾。",
-            "綠色和平一直以「IDEAL」為核心價值，從而帶來改變，調查(Investigation)、記錄(Document)、揭露(Expose)、行動(Act)、游說(Lobby)均缺一不可，例子之一就是我們曾經「放蛇」揭露香港海味店非法售賣極瀕危石首魚花膠，並成功游說當局加強執法打擊走私，最終令兩名東主定罪、罰款，致力拯救慘遭誤捕而瀕臨絕種的加灣鼠海豚。",
-            "綠色和平近年向愈趨嚴重的塑膠污染宣戰，成功推動屈臣氏及759阿信屋承諾淘汰微塑膠產品之餘，亦促使多間連鎖快餐店踏出「走塑」第一步。每當分享這些環保成就時得到市民共鳴、認同，皆讓我倍感自豪！"
-          ]
-        }
+            '我希望以真誠打動市民，邀請他們與綠色和平一同堅守環境保護最前線；自己也希望以身作則，讓每位隊員承傳這顆人與人之間坦誠相對的心。',
+            '最初加入時，以為籌款如同「呃錢」，之後才明白綠色和平是全球首創直接對話行動(Direct Dialogue Campaign)理念、1999年更是香港首間成立街頭籌款團隊的國際非政府組織。我們在香紮根20多年來，從不接受政商界捐款，秉持獨立、公正守護環境，更需要集結群眾力量作最強後盾。',
+            '綠色和平一直以「IDEAL」為核心價值，從而帶來改變，調查(Investigation)、記錄(Document)、揭露(Expose)、行動(Act)、游說(Lobby)均缺一不可，例子之一就是我們曾經「放蛇」揭露香港海味店非法售賣極瀕危石首魚花膠，並成功游說當局加強執法打擊走私，最終令兩名東主定罪、罰款，致力拯救慘遭誤捕而瀕臨絕種的加灣鼠海豚。',
+            '綠色和平近年向愈趨嚴重的塑膠污染宣戰，成功推動屈臣氏及759阿信屋承諾淘汰微塑膠產品之餘，亦促使多間連鎖快餐店踏出「走塑」第一步。每當分享這些環保成就時得到市民共鳴、認同，皆讓我倍感自豪！',
+          ],
+        },
         /*
 				{
 					name: "Yumi Cheung",
@@ -217,9 +217,9 @@ export default {
           ]
         }
 				*/
-      ]
+      ],
     };
-  }
+  },
 };
 </script>
 
@@ -229,24 +229,24 @@ export default {
   margin-bottom: 20px;
 }
 
-[style*="--aspect-ratio"] > :first-child {
+[style*='--aspect-ratio'] > :first-child {
   width: 100%;
 }
 
-[style*="--aspect-ratio"] > img {
+[style*='--aspect-ratio'] > img {
   height: auto;
 }
 
 @supports (--custom: property) {
-  [style*="--aspect-ratio"] {
+  [style*='--aspect-ratio'] {
     position: relative;
   }
-  [style*="--aspect-ratio"]::before {
-    content: "";
+  [style*='--aspect-ratio']::before {
+    content: '';
     display: block;
     padding-bottom: calc(100% / (4 / 3));
   }
-  [style*="--aspect-ratio"] > :first-child {
+  [style*='--aspect-ratio'] > :first-child {
     position: absolute;
     top: 0;
     left: 0;

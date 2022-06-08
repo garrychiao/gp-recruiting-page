@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import Home from "../components/Home";
-import Mission from "../components/Mission";
-import Recruit from "../components/Recruit";
-import Personnel from "../components/Personnel";
-import Fundraiser from "../components/Fundraiser";
-import RecruitInfo from "../components/RecruitInfo";
-import ApplyForm from "../components/ApplyForm";
+import Home from '../components/Home';
+import Mission from '../components/Mission';
+import Recruit from '../components/Recruit';
+import Personnel from '../components/Personnel';
+import Fundraiser from '../components/Fundraiser';
+import RecruitInfo from '../components/RecruitInfo';
+import ApplyForm from '../components/ApplyForm';
 
 export default {
-  name: "MainContent",
+  name: 'MainContent',
   components: {
     Home,
     Mission,
@@ -24,41 +24,41 @@ export default {
     Personnel,
     Fundraiser,
     RecruitInfo,
-    ApplyForm
+    ApplyForm,
   },
   data() {
     return {
       section: Home,
       routerSection: [
         {
-          route: "home",
-          component: Home
+          route: 'home',
+          component: Home,
         },
         {
-          route: "mission",
-          component: Mission
+          route: 'mission',
+          component: Mission,
         },
         {
-          route: "recruit",
-          component: Recruit
+          route: 'recruit',
+          component: Recruit,
         },
         {
-          route: "personnel",
-          component: Personnel
+          route: 'personnel',
+          component: Personnel,
         },
         {
-          route: "fundraiser",
-          component: Fundraiser
+          route: 'fundraiser',
+          component: Fundraiser,
         },
         {
-          route: "recruitInfo",
-          component: RecruitInfo
+          route: 'recruitInfo',
+          component: RecruitInfo,
         },
         {
-          route: "applyForm",
-          component: ApplyForm
-        }
-      ]
+          route: 'applyForm',
+          component: ApplyForm,
+        },
+      ],
     };
   },
   created() {
@@ -66,21 +66,23 @@ export default {
   },
   methods: {
     bindSection() {
-      let section = this.routerSection.find(doc => {
+      let section = this.routerSection.find((doc) => {
         return doc.route === this.$route.params.section;
       });
       // console.log(section);
       if (section) {
         this.section = section.component;
-        dataLayer.push({ event: "pageview" });
+        // Send pageview
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'pageview' });
       }
-    }
+    },
   },
   watch: {
-    "$route.params.section": function() {
+    '$route.params.section': function() {
       this.bindSection();
-    }
-  }
+    },
+  },
 };
 </script>
 

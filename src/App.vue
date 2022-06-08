@@ -43,70 +43,70 @@
 </template>
 
 <script>
-import MainContent from "./views/MainContent.vue";
-import Navbar from "./views/Navbar.vue";
-import Sidebar from "./views/Sidebar.vue";
-import AppFooter from "./views/AppFooter.vue";
+import MainContent from './views/MainContent.vue';
+import Navbar from './views/Navbar.vue';
+import Sidebar from './views/Sidebar.vue';
+import AppFooter from './views/AppFooter.vue';
 
 export default {
-  name: "app",
+  name: 'app',
   data() {
     return {
       fixBtnVisible: true,
       routers: [
         {
-          class: "",
-          icon: "el-icon-s-home",
-          link: "home",
-          label: "首頁"
+          class: '',
+          icon: 'el-icon-s-home',
+          link: 'home',
+          label: '首頁',
         },
         {
-          class: "",
-          icon: "el-icon-aim",
-          link: "mission",
-          label: "組織使命"
+          class: '',
+          icon: 'el-icon-aim',
+          link: 'mission',
+          label: '組織使命',
         },
         {
-          class: "",
-          icon: "el-icon-user-solid",
-          link: "recruit",
-          label: "人才招聘資訊"
+          class: '',
+          icon: 'el-icon-user-solid',
+          link: 'recruit',
+          label: '人才招聘資訊',
         },
         {
-          class: "",
-          icon: "el-icon-postcard",
-          link: "personnel",
-          label: "升遷制度"
+          class: '',
+          icon: 'el-icon-postcard',
+          link: 'personnel',
+          label: '升遷制度',
         },
         {
-          class: "",
-          icon: "el-icon-s-check",
-          link: "fundraiser",
-          label: "認識籌款幹事"
+          class: '',
+          icon: 'el-icon-s-check',
+          link: 'fundraiser',
+          label: '認識籌款幹事',
         },
         {
-          class: "",
-          icon: "el-icon-info",
-          link: "recruitInfo",
-          label: "聯絡方式"
+          class: '',
+          icon: 'el-icon-info',
+          link: 'recruitInfo',
+          label: '聯絡方式',
         },
         {
-          class: "apply-btn",
-          icon: "el-icon-document-checked",
-          link: "applyForm",
-          label: "立即申請"
-        }
-      ]
+          class: 'apply-btn',
+          icon: 'el-icon-document-checked',
+          link: 'applyForm',
+          label: '立即申請',
+        },
+      ],
     };
   },
   components: {
     MainContent,
     Sidebar,
     Navbar,
-    AppFooter
+    AppFooter,
   },
   created() {
-    if (this.$route.params.section == "applyForm") {
+    if (this.$route.params.section == 'applyForm') {
       this.fixBtnVisible = false;
     } else {
       this.fixBtnVisible = true;
@@ -118,17 +118,17 @@ export default {
         this.$router.push({ path: link });
       }
       window.scrollTo(0, 0);
-    }
+    },
   },
   watch: {
-    "$route.params.section": function() {
-      if (this.$route.params.section == "applyForm") {
+    '$route.params.section': function() {
+      if (this.$route.params.section == 'applyForm') {
         this.fixBtnVisible = false;
       } else {
         this.fixBtnVisible = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
