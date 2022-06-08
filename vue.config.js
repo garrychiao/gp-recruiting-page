@@ -1,10 +1,9 @@
 module.exports = {
-    publicPath: './',
+  publicPath: './',
 
-    outputDir: 'docs',
+  outputDir: 'docs',
 
-    assetsDir: 'static',
+  assetsDir: 'static',
 
-    filenameHashing: true,
-
+  filenameHashing: true,
 };
