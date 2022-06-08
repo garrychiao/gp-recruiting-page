@@ -3,7 +3,7 @@
     <el-row>
       <el-col>
         <div>
-          <h1>誠聘綠色和平籌款幹事</h1>
+          <h1>誠聘綠色和平籌款幹事 / 電話推廣大使</h1>
           <h2>以實際行動推動積極改變</h2>
         </div>
         <carousel
@@ -41,11 +41,11 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
+import { Carousel, Slide } from 'vue-carousel';
 import CenterBtn from './CenterBtn';
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Carousel,
     Slide,
@@ -55,32 +55,32 @@ export default {
     return {
       carouselItems: [
         {
-          imgUrl: require("@/assets/img/slide1.jpeg")
+          imgUrl: require('@/assets/img/slide1.jpeg'),
         },
         {
-          imgUrl: require("@/assets/img/slide2.jpg")
+          imgUrl: require('@/assets/img/slide2.jpg'),
         },
         {
-          imgUrl: require("@/assets/img/slide3.jpg")
+          imgUrl: require('@/assets/img/slide3.jpg'),
         },
         {
-          imgUrl: require("@/assets/img/slide4.jpg")
+          imgUrl: require('@/assets/img/slide4.jpg'),
         },
         // {
         //   imgUrl: require("@/assets/img/slide5.jpg")
         // },
         {
-          imgUrl: require("@/assets/img/slide6.jpg")
-        }
-      ]
+          imgUrl: require('@/assets/img/slide6.jpg'),
+        },
+      ],
     };
   },
   mounted() {
     setTimeout(() => {
-      this.$refs["carousel"].onResize();
-      this.$refs["carousel"].goToPage(0);
+      this.$refs['carousel'].onResize();
+      this.$refs['carousel'].goToPage(0);
     }, 200);
-  }
+  },
 };
 </script>
 
