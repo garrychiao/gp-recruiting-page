@@ -56,7 +56,7 @@
                 placeholder="出生年份"
                 :default-value="new Date(2000, 1, 1)"
                 v-model="applyForm.birthYear"
-                style="width: 100%;"
+                style="width: 100%"
               ></el-date-picker>
             </el-form-item>
 
@@ -147,7 +147,7 @@ export default {
             } else {
               Swal.fire(
                 '表格傳送失敗',
-                '歡迎直接將履歷電郵至 andy.li@greenpeace.org 或 與招聘主任 (Whatsapp 5913 0059)了解詳情。',
+                '歡迎直接將履歷電郵至 david.lau@greenpeace.org 或 與招聘主任（電話：2854 8338）了解詳情。',
                 'warning'
               );
               this.submitLoading = false;
@@ -156,7 +156,7 @@ export default {
           } catch (err) {
             Swal.fire(
               '表格傳送失敗',
-              '歡迎直接將履歷電郵至 andy.li@greenpeace.org 或 與招聘主任 (Whatsapp 5913 0059)了解詳情。',
+              '歡迎直接將履歷電郵至 david.lau@greenpeace.org 或 與招聘主任（電話：2854 8338）了解詳情。',
               'warning'
             );
             this.submitLoading = false;
