@@ -36,6 +36,7 @@
       custom-class="drawer"
       direction="ltr"
       size="50%"
+      append-to-body="true"
     >
       <el-menu
         text-color="#000000"

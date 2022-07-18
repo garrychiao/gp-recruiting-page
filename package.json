@@ -15,7 +15,7 @@
     "axios": "^0.19.0",
     "core-js": "^2.6.10",
     "dayjs": "^1.8.17",
-    "element-ui": "^2.12.0",
+    "element-ui": "^2.15.9",
     "headroom.js": "^0.10.3",
     "nprogress": "^0.2.0",
     "sanitize.css": "^11.0.0",
