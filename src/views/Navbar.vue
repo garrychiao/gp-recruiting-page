@@ -4,7 +4,7 @@
       type="flex"
       justify="space-between"
       align="middle"
-      style="height: 60px;"
+      style="height: 60px"
     >
       <el-col :span="20">
         <img
@@ -63,17 +63,17 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   props: {
     routers: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
-      active: "1",
-      drawer: false
+      active: '1',
+      drawer: false,
     };
   },
   created() {
@@ -93,13 +93,13 @@ export default {
           this.active = index;
         }
       }
-    }
+    },
   },
   watch: {
-    "$route.params.section": function() {
+    '$route.params.section': function () {
       this.bindSection();
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -130,9 +130,10 @@ export default {
     color: white !important;
     font-weight: bolder;
     // background-color: #f56c6c;
-    background-color: #ff8100; 
+    background-color: #ff8100;
   }
   .apply-btn-navbar {
+    border-radius: 8px;
     float: right;
     color: #fff;
     background-color: #ff8100;
