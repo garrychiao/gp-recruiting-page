@@ -3,10 +3,10 @@
     <h1>聯絡方式</h1>
     <p>
       有意應徵者，歡迎將履歷電郵至
-      <a href="mailto:david.lau@greenpeace.org" taget="_blank"
-        >david.lau@greenpeace.org</a
+      <a href="mailto:laraine.zou@greenpeace.org" taget="_blank"
+        >laraine.zou@greenpeace.org</a
       >
-      或 與招聘主任（電話號碼：2854 8338）了解詳情。
+      或 與招聘主任（電話號碼：28548317）了解詳情。
       <br />(應徵者提供之全部資料絕對保密及只作招聘之用)
     </p>
     <p>

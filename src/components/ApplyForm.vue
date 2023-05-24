@@ -2,7 +2,7 @@
   <div class="personnel">
     <el-row>
       <el-col>
-        <h1>申請成為全職籌款幹事及街頭教育專員 / 電話推廣大使</h1>
+        <h1>申請成為全職籌款幹事及街頭教育專員</h1>
       </el-col>
       <el-col>
         <img src="../assets/img/slide4.jpg" width="100%" alt />
@@ -23,7 +23,6 @@
             <el-form-item label="工作性質" prop="type">
               <el-radio-group v-model="applyForm.type">
                 <el-radio label="dd">籌款幹事</el-radio>
-                <el-radio label="lc">電話推廣大使</el-radio>
               </el-radio-group>
             </el-form-item>
             <el-form-item label="性別" prop="gender">
